@@ -39,10 +39,10 @@ class AwesomeButtonState extends State<AwesomeButton>{
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Text(displayString),
+              Text(displayString, style:const TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold)),
               const Padding(padding: EdgeInsets.all(10.0))
               RaisedButton(
-                child: const Text("Press me"),
+                child: const Text("Press me", style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic, fontSize: 20.0),),
                 color: Colors.blue,
                 onPressed: onPressed,
               )
